@@ -13,14 +13,21 @@
         <!--<div> tag is used to create divisions-->
         <!-- <input> tag is used to input data from the user-->
         <!-- name attribute is used by backend in order to identify the input-->
+        <!-- If we click name in our form then also the box will get selected using label tag and id-->
+        <!-- You need to keep the same id as in label tag-->
         <div>
-            Name: <input type="text" name="Myname"> 
+        <label for="name">Name:</label>
+            <input type="text" name="Myname" id="name"> 
         </div>
+        <br>
         <div>
-             Role : <input type="text" name="Myrole">
+            <label for="role">Role:</label>
+            <input type="text" name="Myrole" id="role">
         </div>
+        <br>
         <div>
-            Email: <input type="email" name="Myemail">
+            <label for="email">Email:</label>
+            <input type="email" name="Myemail" id="email">
         </div>
         <br>
         <div>
@@ -28,7 +35,7 @@
         </div>
         <br>
         <div>
-            Are you Eligible? <input type="checkbox" name="Myeligibility">
+           <label for="eligible">Are you eligible?</label> <input type="checkbox" name="Myeligibility" id="eligible">
         </div>
         <br>
         <div>
@@ -38,6 +45,18 @@
         <div>
             <strong><em>Write about yourself</em></strong><br>
             <textarea name="MyIdentity" cols="50" rows="20"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Select the car you want from the company :</label>
+            <select name="myCar" id="car">
+                <option value="Select">Select</option>
+                <option value="ind">Indica</option>
+                <option value="swf">Swift</option>
+                <option value="Merc">Mercedes</option>
+                <option value="Tata">Innova</option>
+                <option value="None">None</option>
+            </select>
         </div>
         <br>
         <div>
