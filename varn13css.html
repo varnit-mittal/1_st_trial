@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*This is an element selector */
+        p{
+            color: red;
+            border: 2px dashed blue;
+        }
+        /* this is an id selector and # is the syntax*/
+        #purpleElement{
+            color: purple;
+            border: 3px solid green;
+        }
+        /* this is a class selector and . is the syntax*/
+        .Element{
+            background-color: aquamarine;
+        }
+        /* this is a grouping selector */
+        span,footer{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p>this is a simple paragraph to demostrate css selectors</p>
+    <p id="purpleElement" class="Element">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque omnis repudiandae provident dolores dignissimos vel. Facilis consequatur accusamus repudiandae aut!</p>
+    <div>
+            <p class="Element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi nostrum cum assumenda aperiam harum?</p>
+            <span>This is span</span>
+    </div>
+    <footer>This is a footer</footer>
+</body>
+</html>
