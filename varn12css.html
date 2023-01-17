@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    
+
+    <!--Internal CSS is adding all the sytle in style tag inside head tag-->
+
+    
+    <style>
+        p{
+            color: purple;
+            background-color: burlywood !important;
+        }
+
+    </style>
+    <!--This is external CSS and is done by adding a style sheet-->
+    <link rel="stylesheet" href="css/varn12.css">
+    
+</head>
+<!--Inline CSS is given highest priority than Internal CSS-->
+
+<!--Priority of External and Internal CSS is same and the latter one will be executed-->
+
+<!--If external CSS is included in any segment of html then it is applied to whole file if there is no internal CSS afterwards and no inline CSS-->
+
+<!-- Inorder to make something important without priority of execution type !important-->
+<body>
+    <!--This is inline CSS-->
+    <h3>This is CSS Tutorial</h3>
+    <p style="color: red; background-color: aqua;">This tutorial will teach you everything you need to know about HTML/CSS</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dolor quisquam illo animi obcaecati ducimus ipsam iste facilis itaque quam.</p>
+
+    
+</body>
+</html>
