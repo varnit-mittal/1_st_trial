@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FONTS</title>
+    <!--Web saved fonts are the fonts which come pre-installed with the OS that you are using. If ythese fonts are used, then you will never get an error.-->
+
+    <!--The fonts that are not saved are called as web fonts and are needed to be imported.-->
+
+    <!--I have imported external font from google fonts and pasted the font family inside internal CSS-->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+    <style>
+        p{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            /*This is called as font stack and is used like if one is not available use the other and other. These are arranged in priority order*/
+
+            /*Specifies a prioritized list of font family names of generic family names. A user agent iterates through the list of family names until it matches an available font that contains a glyph for the character to be rendered.*/
+
+            /* Best site to import fonts is google fonts */
+        }
+        #toy{
+            font-family:Work Sans;
+            font-size: 45px !important;    /*Font size of 45 pixels (1 pixel is 1/96 of an inch*/
+        }
+        span{
+            line-height: 3em; /*em is unit which measures x*font-size of the parent script*/
+            /*it seperates that much hieght from the above font*/
+
+            font-weight:bolder;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="font">
+    <h2>CSS Fonts</h2>
+    <p>Let's play with fonts. It is very exciting.</p>
+
+    <p id="toy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eligendi blanditiis eveniet necessitatibus eaque? Deleniti excepturi <span>voluptatum est? Soluta, fugit tenetur</span> veritatis facilis repellat libero debitis ullam obcaecati aspernatur earum.</p>
+
+    <a href="https://www.udacity.com/blog/2021/01/html-css-font-weight.html#:~:text=What%20is%20Font%20Weight%3F,want%20to%20display%20your%20text." target="_blank"><button style="border-color: coral; padding: 3px; background-color: moccasin;"><span style="font-family:cursive; font-size: 20px; font-weight: bolder;">Font-wieght<br>(click me)</span></button></a>
+    </div>
+</body>
+</html>
