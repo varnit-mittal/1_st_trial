@@ -1,0 +1,10 @@
+#first_para{
+    color:red; /*This is color by name*/
+}
+#second_para{
+    color:rgb(9,88,255)
+}
+#third_para{
+    color: #ff88ff; /*Color by hex value*/
+    background-color: blue;
+}

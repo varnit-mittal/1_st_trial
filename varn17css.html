@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hieght, width, borders and backgrounds</title>
+    <style>
+        #firstpara{
+            background-color: red;
+
+            height: 100px; /*Defines the hieght of the paragraph to the html*/
+            width: 500px; /*defines the width of the paragraph to the html*/
+
+            border-width: 5px;
+            border-color: green;
+            border-style: dashed;
+            border-radius: 12px; /*helps making the border curvy*/
+
+            /*Can also be written as */
+
+            border: 5px dashed green
+        }
+
+        #secondpara{
+            background-color: aquamarine;
+            height: 100px;
+            width: 455px;
+            border-top: 2px solid violet;
+            border-left: 3px dotted green;
+            border-right: 5px dashed blue;
+            border-bottom:7px dashed magenta;
+
+            border-top-left-radius: 3px;
+            border-top-right-radius: 9px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 111px;
+        }
+
+        #thirdpara{
+            height: 600px;
+            width: 455px;
+            background-image: url("images/dog.jpg");
+            border: 3px solid red;
+            /* background-repeat: repeat-x; repeats only 1 line of image in x direction*/
+
+            /* background-repeat: repeat-y; repeats only 1 line of image in y direction*/
+
+            background-repeat: no-repeat;
+            background-position: 70px 130px; 
+            /* The first represents x-axis and the second represents y-axis */
+
+        }
+    </style>
+</head>
+<body>
+    <h3>This is a heading</h3>
+    <p id="firstpara">This is a paragraph</p>
+
+    <h3>This is second heading</h3>
+    <p id="secondpara">This is a paragraph</p>
+
+    <h3>This is third heading</h3>
+    <p id="thirdpara">This is a paragraph</p>
+</body>
+</html>
